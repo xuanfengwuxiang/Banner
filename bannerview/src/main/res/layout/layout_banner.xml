@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+    >
+
+    <com.xuanfeng.bannerview.widget.BannerViewPager
+        android:id="@+id/bannerViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <!--单独指示器-->
+        <LinearLayout
+            android:id="@+id/ll_only_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_num_indicator"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:background="#666666"
+            android:gravity="center"
+            android:text="1/1"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+
+        <!--标题和指示器-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_title_and_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99999999"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/tv_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@android:color/white"/>
+
+            <LinearLayout
+                android:id="@+id/ll_inner_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

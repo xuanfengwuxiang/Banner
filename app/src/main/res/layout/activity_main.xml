@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/view_pager"
+        android:background="#999999"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中华人民共和国中华人民共和国"
+            android:textColor="@android:color/white"/>
+
+        <LinearLayout
+            android:id="@+id/ll_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+
+    <com.xuanfeng.bannerview.BannerView
+        android:id="@+id/bannerView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        app:delay_time="2000"
+        app:indicator_drawable_selected="@drawable/selected_dot"
+        app:indicator_drawable_unselected="@drawable/bg_dot"
+        app:indicator_height="10dp"
+        app:indicator_margin="20dp"
+        app:indicator_width="10dp"
+        app:is_auto_play="true"
+        app:scroll_time="1000"
+        app:title_background="#99990000"
+        app:title_textcolor="#00ff00"
+        app:title_textsize="15sp"/>
+
+</LinearLayout>
