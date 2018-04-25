@@ -15,6 +15,7 @@ public class BannerConfig {
     public static final int CIRCLE_INDICATOR = 1;//圆形指示器
     public static final int CIRCLE_INDICATOR_TITLE = 2;//圆形指示器+标题
     public static final int NUM_INDICATOR = 3;//数字指示器
+    public static final int NO_INDICATOR = 4;//没有指示器
     public static final boolean IS_SCROLL=true;
 
     public static final boolean IS_AUTO_PLAY = true;

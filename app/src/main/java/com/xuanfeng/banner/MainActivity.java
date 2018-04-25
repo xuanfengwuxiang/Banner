@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 })
                 .setBannerTitles(tittle)
-                .setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE)
+                .setBannerStyle(BannerConfig.NO_INDICATOR)
                 .start();
     }
 }
