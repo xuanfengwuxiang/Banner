@@ -468,7 +468,15 @@ public class BannerView extends FrameLayout {
 
         @Override
         public int getCount() {
-            return imageResIds == null ? 0 : imageResIds.size() * 10000 * 100;
+            if (imageResIds == null) {
+                return 0;
+            }
+            //防止超出整型最大值
+            int virtualSize = imageResIds.size() * 10000 * 1000 * 2;
+            if (virtualSize > Integer.MAX_VALUE) {
+                virtualSize = Integer.MAX_VALUE;
+            }
+            return virtualSize;
         }
 
         @Override

@@ -6,6 +6,7 @@ import android.os.Message;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -93,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
 
         });
         testBanner();
+        Log.i("最大值",""+Integer.MAX_VALUE);
+
     }
 
 
