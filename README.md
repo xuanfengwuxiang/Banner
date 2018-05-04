@@ -6,7 +6,7 @@ allprojects { repositories { ... maven { url 'https://www.jitpack.io' } } }
 
 STEP2:
 
-dependencies { compile 'com.github.xuanfengwuxiang:Banner:1.1' }
+dependencies { compile 'com.github.xuanfengwuxiang:Banner:1.2' }
 
 STEP3:
 
